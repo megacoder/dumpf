@@ -1,0 +1,7 @@
+SUBDIRS	= src
+
+EXTRA_DIST=AUTHORS COPYING ChangeLog INSTALL LICENSE NEWS README       \
+         README.md TODO dumpf.1
+
+man_MANS = dumpf.1
+

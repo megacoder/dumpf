@@ -1,0 +1,43 @@
+%define ver @VERSION@
+%define rel 1
+%define prefix /usr
+
+Prefix: %{prefix}
+
+Summary: Classic hex dump with tons of options
+Name: dumpf
+Version: %{ver}
+Release: %{rel}
+Source: %{name}-%{ver}.tar.gz
+License: GPLv2
+URL: http://www.megacoder.com/
+Group: Applications/System
+Buildroot: %{_tmppath}/%{name}-root
+
+%summary
+Ye Olde Hexadecimal Dumper
+
+%description
+I wrote this at least 25 years ago; talk about the problem of software reuabaility.  Linux how offers HEXDUMP which does some of the things dumpf will do.
+
+%prep
+
+%setup -q
+%build
+	CFLAGS="$RPM_OPT_FLAGS" ./configure --prefix=%{prefix}
+	make
+
+%install
+	rm -rf ${RPM_BUILD_ROOT}
+	make prefix=${RPM_BUILD_ROOT}%{prefix} install
+
+%clean
+	rm -rf ${RPM_BUILD_ROOT}
+
+%files
+%defattr(-,root,root)
+%doc AUTHORS COPYING README.md INSTALL NEWS LICENSE TODO
+%{_bindir}/%{name}
+%{_mandir}/man1/dumpf.1.gz
+
+%changelog

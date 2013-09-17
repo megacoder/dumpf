@@ -1,0 +1,30 @@
+.TH ERRNO "1" "Sep 2013" "MegaCoder.com" "User Commands"
+.SH NAME
+dumpf \- hex and ascii dump, the classic one
+.SH SYNOPSIS
+.B dumpf
+\fIOPTION\fR]... \fIFILE\fR...
+.SH DESCRIPTION
+.PP
+At some time in their career, a programmer needs to look at a hexadecimal dump of some file.
+I wrote this about 25 years ago and it has followed me around since then.
+It long predates the current \fIhexdump\P program; my fingers type \fIdumpf\P automatically, it's like \fIvi\fP commands that have been branded into my DNA.
+.TP
+\fB\-a\fR
+.TP
+\fB\-b\fR \fIoffset\fP
+.TP
+\fB\-h\fR
+help, such as it is.
+.TP
+\fB\-n\fR \fInbytes\fP
+display at most \fInbytes\P of the file.
+.TP
+\fB\-o\fR \fIofile\fP
+write output to \fIofile\fP instead of to \fIstdout\fP.
+.SH AUTHOR
+Written by Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+.SH COPYRIGHT
+Copyright \(co 2013 Tommy Reynolds; all rights reserved; international copyright secured.
+.PP
+This code is licensed under the GPL v2, and no other.
