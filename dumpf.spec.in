@@ -14,9 +14,6 @@ URL: http://www.megacoder.com/
 Group: Applications/System
 Buildroot: %{_tmppath}/%{name}-root
 
-%summary
-Ye Olde Hexadecimal Dumper
-
 %description
 I wrote this at least 25 years ago; talk about the problem of software reuabaility.  Linux how offers HEXDUMP which does some of the things dumpf will do.
 
