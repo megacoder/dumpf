@@ -30,6 +30,8 @@ fi
 
 rm -rf autom4te.cache configure
 
+touch	README README.html README.md
+
 aclocal ${ACLOCAL_FLAGS}	|| exit $?
 autoheader -Wall -Werror	|| exit $?
 automake --add-missing		|| exit $?
