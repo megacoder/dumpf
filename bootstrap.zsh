@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 # vim: nonu ts=8 sw=8
 (
 	exec 2>&1
