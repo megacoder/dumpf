@@ -13,6 +13,7 @@ License: GPLv2
 URL: http://www.megacoder.com/
 Group: Applications/System
 Buildroot: %{_tmppath}/%{name}-root
+BuildRequires: python-markdown2 lynx
 
 %description
 I wrote this at least 25 years ago; talk about the problem of software reuabaility.  Linux how offers HEXDUMP which does some of the things dumpf will do.
@@ -33,7 +34,8 @@ I wrote this at least 25 years ago; talk about the problem of software reuabaili
 
 %files
 %defattr(-,root,root)
-%doc AUTHORS COPYING README.md INSTALL NEWS LICENSE TODO
+%doc	AUTHORS COPYING INSTALL NEWS LICENSE TODO
+%doc	README.md README.html README
 %{_bindir}/%{name}
 %{_mandir}/man1/dumpf.1.gz
 
