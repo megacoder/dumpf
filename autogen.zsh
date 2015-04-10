@@ -30,7 +30,7 @@ fi
 
 rm -rf autom4te.cache configure
 
-aclocal ${ACLOCAL_FLAGS}		|| exit $?
-autoheader -Wall -Werror		|| exit $?
-automake --foreign --add-missing	|| exit $?
-autoconf				|| exit $?
+aclocal ${ACLOCAL_FLAGS}	|| exit $?
+autoheader -Wall -Werror	|| exit $?
+automake --add-missing		|| exit $?
+autoconf			|| exit $?
