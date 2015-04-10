@@ -30,13 +30,7 @@ fi
 
 rm -rf autom4te.cache configure
 
-# README and INSTALL are required by automake, but may be deleted by clean
-# up rules. to get automake to work, simply touch these here, they will be
-# regenerated from their corresponding *.in files by ./configure anyway.
-
-touch README INSTALL NEWS ChangeLog AUTHORS
-
-aclocal ${ACLOCAL_FLAGS}	|| exit $?
-autoheader			|| exit $?
-automake --add-missing		|| exit $?
-autoconf			|| exit $?
+aclocal ${ACLOCAL_FLAGS}		|| exit $?
+autoheader -Wall -Werror		|| exit $?
+automake --foreign --add-missing	|| exit $?
+autoconf				|| exit $?

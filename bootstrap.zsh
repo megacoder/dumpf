@@ -2,7 +2,7 @@
 # vim: nonu ts=8 sw=8
 (
 	exec 2>&1
-	autoreconf -fvim
+	./autogen.zsh
 	./configure
 	make dist
 	rm -rf RPM
