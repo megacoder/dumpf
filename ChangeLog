@@ -1,0 +1,19 @@
+2015-04-10  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* bootstrap.zsh: Build RPM locally, instead of off from $HOME.
+
+2013-09-17  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* dumpf.1, dumpf.spec.in, src/Makefile.am: Clarified '-a' switch.
+
+2013-09-17  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* AUTHORS, ChangeLog, INSTALL, LICENSE, Makefile.am, NEWS, README,
+	README.md, TODO, autogen.sh, bootstrap.zsh, configure.ac, dumpf.1,
+	dumpf.spec.in, ltmain.sh, src/Makefile.am, src/dumpf.c,
+	src/gcc-compat.h: Baseline
+
+2013-09-16  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* Initial commit
+
